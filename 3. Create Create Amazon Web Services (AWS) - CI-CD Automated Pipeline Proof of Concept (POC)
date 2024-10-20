@@ -1,0 +1,28 @@
+3. CI/CD Automated Pipeline:
+
+• Objective: Set up a Continuous Integration/Continuous Deployment (CI/CD) pipeline to automate code deployment.
+
+Step 1: Choose a CI/CD Tool:
+• Use AWS CodePipeline for the pipeline setup.
+
+Step 2: Set Up Source Control:
+• Use AWS CodeCommit or GitHub to store your source code (e.g., the CloudFormation template or SageMaker code).
+
+Step 3: Create a Pipeline:
+• Go to AWS CodePipeline and create a new pipeline.
+• Configure the source stage to pull from your repository (CodeCommit or GitHub) whenever changes are pushed.
+
+Step 4: Build Stage (Optional):
+• Add AWS CodeBuild to compile or test your code (if needed).
+• If you’re using CloudFormation or SageMaker, this step may not be necessary unless you’re doing code compilation or pre-deployment testing.
+
+Step 5: Deploy Stage:
+• Configure CodePipeline to use AWS CloudFormation for infrastructure deployment or SageMaker for model deployment.
+• Ensure that any code changes in the repository trigger an automatic deployment to the target environment.
+
+Step 6: Notifications (Optional):
+• Set up SNS or email notifications to alert you of pipeline successes or failures.
+
+Step 7: Testing & Validation:
+• Test the pipeline by pushing changes to the repository and monitoring the automated deployment.
+• Confirm that your infrastructure or models are deployed as expected.
