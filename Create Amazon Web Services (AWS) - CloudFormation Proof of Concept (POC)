@@ -1,0 +1,22 @@
+2. CloudFormation Proof of Concept:
+
+• Objective: Create a simple infrastructure setup using AWS CloudFormation.
+
+Step 1: Write a CloudFormation Template:
+• Define a basic infrastructure (e.g., an S3 bucket, EC2 instance) in YAML or JSON format.
+• Example:
+Resources:
+MyS3Bucket:
+Type: 'AWS::S3::Bucket'
+Properties:
+BucketName: 'my-sample-bucket'
+
+Step 2: Upload to CloudFormation:
+• Go to the AWS CloudFormation console, click “Create Stack,” and upload your template.
+
+Step 3: Launch the Stack:
+• Follow the steps in the console to launch the CloudFormation stack.
+• Monitor the process and troubleshoot if there are any issues during deployment.
+
+Step 4: Verify Resources:
+• After the stack is created, check the AWS resources (S3 bucket, EC2 instance, etc.) to ensure they were created correctly.
