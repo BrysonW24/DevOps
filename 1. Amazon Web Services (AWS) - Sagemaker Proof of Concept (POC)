@@ -18,3 +18,4 @@ Step 4: Train the Model:
 Step 5: Deploy and Test:
 • Deploy the model as a SageMaker endpoint.
 • Test it by sending real or test data to the endpoint for predictions.
+
